@@ -1,6 +1,6 @@
 # PolyForm Non-Commercial / Personal Use License
 
-Copyright (c) [2026] [Alexander C. Kidd dba Bit Dreams/Debatical]
+Copyright (c) 2026 Alexander C. Kidd (dba Bit Dreams/Debatical)
 
 ## 1. Permissions
 You are granted a worldwide, royalty-free, non-exclusive license to:
@@ -15,7 +15,7 @@ You are granted a worldwide, royalty-free, non-exclusive license to:
 ## 3. Commercial Tier & Inquiry
 Commercial use of this software is strictly prohibited under this license. If you wish to use this software for commercial products, production environments, or any monetization, you must obtain a separate commercial license. 
 
-To inquire about commercial licensing tiers and custom terms, please contact the license holder at: [Your Contact Email/Link]
+To inquire about commercial licensing tiers and custom terms, please contact the license holder at: github.com/AlexanderKidd or debatical@gmail.com
 
 ## 4. Warranty
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED.
