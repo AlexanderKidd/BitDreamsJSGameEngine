@@ -9,20 +9,42 @@ lerna-debug.log*
 
 # Dependency directories
 node_modules/
+/android/capacitor-cordova-android-plugins/
 
 # Build outputs
 dist/
 dist-ssr/
+build/
+.gradle/
 *.local
+/android/.gradle/
+/android/*/build/
+/android/build/
+/android/app/src/main/assets/public/
+/android/app/src/main/assets/capacitor.config.json
+/android/app/src/main/assets/capacitor.plugins.json
+/android/app/src/main/res/xml/config.xml
+*.apk
+*.aar
+*.ap_
+*.aab
+*.dex
+*.class
 
 # IDEs and Editors
 .idea/
 .vscode/
+*.iml
 *.suo
 *.ntvs*
 *.njsproj
 *.sln
 *.sw?
+.navigation/
+captures/
+*.hprof
+.externalNativeBuild/
+.cxx/
 
 # OS files
 .DS_Store
@@ -31,8 +53,13 @@ Thumbs.db
 # Agent Artifacts
 .artifacts/
 
-# Android build/local files
-/android/.gradle/
-/android/build/
-/android/*/build/
+# Android local config
+local.properties
 /android/local.properties
+/android/vcs.xml
+
+# Fastlane
+/android/fastlane/report.xml
+/android/fastlane/Preview.html
+/android/fastlane/screenshots/
+/android/fastlane/test_output/
