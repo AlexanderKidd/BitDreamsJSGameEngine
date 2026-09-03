@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="favicon">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/favicon.zip!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
