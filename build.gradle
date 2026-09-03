@@ -1,0 +1,27 @@
+// Root build.gradle for multi-module project
+buildscript {
+    repositories {
+        google()
+        mavenCentral()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:9.3.2'
+        classpath 'com.google.gms:google-services:4.3.15'
+    }
+}
+
+// Apply variables from the android directory so submodules can see them
+if (file("android/variables.gradle").exists()) {
+    apply from: "android/variables.gradle"
+}
+
+allprojects {
+    repositories {
+        google()
+        mavenCentral()
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}

@@ -1,0 +1,11 @@
+// Root settings.gradle for opening the whole project in Android Studio
+rootProject.name = 'BitDreamsJSGameEngine'
+
+include ':app'
+project(':app').projectDir = new File(rootDir, 'android/app')
+
+include ':capacitor-android'
+project(':capacitor-android').projectDir = new File(rootDir, 'node_modules/@capacitor/android/capacitor')
+
+include ':capacitor-cordova-android-plugins'
+project(':capacitor-cordova-android-plugins').projectDir = new File(rootDir, 'android/capacitor-cordova-android-plugins')
