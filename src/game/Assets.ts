@@ -103,6 +103,7 @@ export const Assets = {
     grassTile: null as ImageAsset | null,
     tree: null as ImageAsset | null,
     vine: null as ImageAsset | null,
+    logo: null as ImageAsset | null,
 
     // Audio
     menuMusic: null as AudioAsset | null,
@@ -128,6 +129,8 @@ export async function loadAllAssets() {
     Assets.bitSoldierRight2 = await AssetLoader.loadImage('/assets/bit_soldierRight2.png');
     Assets.bitSoldierUp = await AssetLoader.loadImage('/assets/bit_soldierUp.png');
     Assets.bitSoldierUp2 = await AssetLoader.loadImage('/assets/bit_soldierUp2.png');
+
+    Assets.logo = await AssetLoader.loadImage('/assets/bitdreams_logosplash.png');
 
     // Load available audio
     Assets.menuMusic = await AssetLoader.loadAudio('/assets/bit_menu7.wav');

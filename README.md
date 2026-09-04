@@ -1,4 +1,4 @@
-# Bit Dreams JavaScript Game Engine 👾
+# Bit Dreams Game Engine 👾
 
 ## Overview
 A modern React + TypeScript port of the Bit Dreams game engine. This project uses Vite for high-performance development and Capacitor for native Android/iOS deployment.

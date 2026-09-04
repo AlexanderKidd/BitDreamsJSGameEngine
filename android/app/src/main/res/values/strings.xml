@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
 <resources>
-    <string name="app_name">Bit vs Bit JS</string>
-    <string name="title_activity_main">Bit vs Bit JS</string>
-    <string name="package_name">com.alexkidd.bitvsbit</string>
-    <string name="custom_url_scheme">com.alexkidd.bitvsbit</string>
+    <string name="app_name">Bit Dreams Game Engine</string>
+    <string name="title_activity_main">Bit Dreams Game Engine</string>
+    <string name="package_name">com.alexkidd.bitdreamsgameengine</string>
+    <string name="custom_url_scheme">com.alexkidd.bitdreamsgameengine</string>
 </resources>

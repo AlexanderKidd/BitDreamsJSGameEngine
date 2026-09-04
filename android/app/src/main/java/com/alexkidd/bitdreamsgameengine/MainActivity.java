@@ -1,4 +1,4 @@
-package com.alexkidd.bitvsbit;
+package com.alexkidd.bitdreamsgameengine;
 
 import android.content.pm.ActivityInfo;
 import android.os.Build;

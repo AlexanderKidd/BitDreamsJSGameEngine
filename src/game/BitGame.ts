@@ -11,8 +11,42 @@ export class BitGameImpl extends WebGame {
     }
 
     getInitScreen(): Screen {
-        return new MainGameScreen(this);
+        return new BitDreamsSplashScreen(this);
     }
+}
+
+class BitDreamsSplashScreen implements Screen {
+    private game: BitGameImpl;
+    private timer: number = 0;
+    private readonly DURATION: number = 5;
+
+    constructor(game: BitGameImpl) {
+        this.game = game;
+    }
+
+    update(deltaTime: number): void {
+        this.timer += deltaTime;
+        if (this.timer >= this.DURATION) {
+            this.game.setScreen(new MainGameScreen(this.game));
+        }
+    }
+
+    present(deltaTime: number): void {
+        const g = this.game.getGraphics();
+        g.clear(0); // Black background
+
+        if (Assets.logo) {
+            // Center the logo
+            const x = (g.getWidth() - Assets.logo.width) / 2;
+            const y = (g.getHeight() - Assets.logo.height) / 2;
+            g.drawImage(Assets.logo, x, y);
+        }
+    }
+
+    pause(): void {}
+    resume(): void {}
+    dispose(): void {}
+    backButton(): void {}
 }
 
 class MainGameScreen implements Screen {
@@ -113,6 +147,11 @@ class MainGameScreen implements Screen {
                 }
             }
         });
+
+        // Keep player within screen bounds (horizontal only)
+        if (this.player.x < 0) this.player.x = 0;
+        // Assuming player width is 64
+        if (this.player.x > 800 - 64) this.player.x = 800 - 64;
 
         // Update Bullets
         this.bullets.forEach(b => b.update());
